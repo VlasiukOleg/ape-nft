@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/react-homework-template/static/css/main.19820907.css",
-    "main.js": "/react-homework-template/static/js/main.ade4a53b.js",
-    "static/js/697.3539811e.chunk.js": "/react-homework-template/static/js/697.3539811e.chunk.js",
+    "main.js": "/react-homework-template/static/js/main.12dd5b36.js",
+    "static/js/136.69abe01f.chunk.js": "/react-homework-template/static/js/136.69abe01f.chunk.js",
     "static/media/BiroScriptPlus-Bold.woff2": "/react-homework-template/static/media/BiroScriptPlus-Bold.ee2ea28fe92df0289248.woff2",
     "static/media/RightGrotesk-CompactBlack.otf": "/react-homework-template/static/media/RightGrotesk-CompactBlack.965367bf710f347153cc.otf",
     "static/media/MessinaSansMono-Regular.woff2": "/react-homework-template/static/media/MessinaSansMono-Regular.19feb1851352756f781c.woff2",
     "static/media/MessinaSansMono-SemiBold.woff2": "/react-homework-template/static/media/MessinaSansMono-SemiBold.c212b64fe491bf9fb5ad.woff2",
     "index.html": "/react-homework-template/index.html",
     "main.19820907.css.map": "/react-homework-template/static/css/main.19820907.css.map",
-    "main.ade4a53b.js.map": "/react-homework-template/static/js/main.ade4a53b.js.map",
-    "697.3539811e.chunk.js.map": "/react-homework-template/static/js/697.3539811e.chunk.js.map"
+    "main.12dd5b36.js.map": "/react-homework-template/static/js/main.12dd5b36.js.map",
+    "136.69abe01f.chunk.js.map": "/react-homework-template/static/js/136.69abe01f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.19820907.css",
-    "static/js/main.ade4a53b.js"
+    "static/js/main.12dd5b36.js"
   ]
 }
