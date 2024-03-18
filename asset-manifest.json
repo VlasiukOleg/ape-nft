@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-homework-template/static/css/main.5ba114b2.css",
+    "main.js": "/react-homework-template/static/js/main.052431b6.js",
+    "static/media/BiroScriptPlus-Bold.woff2": "/react-homework-template/static/media/BiroScriptPlus-Bold.ee2ea28fe92df0289248.woff2",
+    "static/media/RightGrotesk-CompactBlack.otf": "/react-homework-template/static/media/RightGrotesk-CompactBlack.965367bf710f347153cc.otf",
+    "static/media/MessinaSansMono-Regular.woff2": "/react-homework-template/static/media/MessinaSansMono-Regular.19feb1851352756f781c.woff2",
+    "static/media/MessinaSansMono-SemiBold.woff2": "/react-homework-template/static/media/MessinaSansMono-SemiBold.c212b64fe491bf9fb5ad.woff2",
+    "index.html": "/react-homework-template/index.html",
+    "main.5ba114b2.css.map": "/react-homework-template/static/css/main.5ba114b2.css.map",
+    "main.052431b6.js.map": "/react-homework-template/static/js/main.052431b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ba114b2.css",
+    "static/js/main.052431b6.js"
+  ]
+}
