@@ -1,44 +1,39 @@
 @import-normalize; /* bring in normalize.css styles */
 
 @font-face {
-  font-family: 'RightGroteskBlack';
-  src: url(/assets/fonts/RightGrotesk-CompactBlack.otf) format('otf');
-  font-weight: 900;
+  font-family: 'Right Grotesk Compact Black';
+  src: url(./assets/fonts/RightGroteskCompactBlack.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Messina';
-  src: url(/assets/fonts//MessinaSansMono-Regular.woff2) format('woff2');
+  src: url(./assets/fonts/MessinaSansMono-Regular.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Messina';
-  src: url(/assets/fonts/MessinaSansMono-SemiBold.woff2) format('woff2');
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'Messina';
-  src: url(/assets/fonts/MessinaSansMono-SemiBold.woff2) format('woff2');
+  src: url(./assets/fonts/MessinaSansMono-SemiBold.woff2) format('woff2');
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'BiroScriptPlus';
-  src: url(/assets/fonts/BiroScriptPlus-Bold.woff2) format('woff2');
+  src: url(./assets/fonts/BiroScriptPlus-Bold.woff2) format('woff2');
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'BiroScriptUSPlus';
-  src: url(/assets/fonts/BiroScriptPlus-Bold.woff2) format('woff2');
+  src: url(./assets/fonts/BiroScriptUSPlus-Bold.woff2) format('woff2');
   font-weight: 700;
 }
 
 body {
   margin: 0;
-  font-family: 'BiroScriptUSPlus', sans-serif;
+  font-family: 'Messina', monospace;
   font-weight: 700;
+  font-size: 12px;
+  line-height: 1.2;
 
   background-color: #181818;
   color: #ffffff;
