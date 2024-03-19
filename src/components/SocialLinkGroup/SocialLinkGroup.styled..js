@@ -11,3 +11,9 @@ export const SocialLinkItem = styled.li`
     margin-bottom: 8px;
   }
 `;
+
+export const SvgIcon = styled.svg`
+  width: 16px;
+  height: 16px;
+  fill: ${props => (props.fill ? props.fill : 'current')};
+`;

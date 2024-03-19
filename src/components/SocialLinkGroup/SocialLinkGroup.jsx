@@ -1,30 +1,34 @@
 import { MenuBtn } from 'components/MenuBtn/MenuBtn';
-import { SocialLinkList, SocialLinkItem } from './SocialLinkGroup.styled.';
+import {
+  SocialLinkList,
+  SocialLinkItem,
+  SvgIcon,
+} from './SocialLinkGroup.styled.';
 
 import icon from '../../assets/icons/svg-sprite.svg';
 
-export const SocialLinkGroup = () => {
+export const SocialLinkGroup = ({ colorbg, fill }) => {
   return (
     <SocialLinkList>
       <SocialLinkItem>
-        <MenuBtn padding={'16px 16px'}>
-          <svg width={16} height={16}>
+        <MenuBtn padding={'16px 16px'} colorbg={colorbg}>
+          <SvgIcon fill={fill}>
             <use href={icon + `#icon-discord`}></use>
-          </svg>
+          </SvgIcon>
         </MenuBtn>
       </SocialLinkItem>
       <SocialLinkItem>
-        <MenuBtn padding={'16px 16px'}>
-          <svg width={16} height={16}>
+        <MenuBtn padding={'16px 16px'} colorbg={colorbg}>
+          <SvgIcon fill={fill}>
             <use href={icon + `#icon-ship`}></use>
-          </svg>
+          </SvgIcon>
         </MenuBtn>
       </SocialLinkItem>
       <SocialLinkItem>
-        <MenuBtn padding={'16px 16px'}>
-          <svg width={16} height={16}>
+        <MenuBtn padding={'16px 16px'} colorbg={colorbg}>
+          <SvgIcon fill={fill}>
             <use href={icon + `#icon-x-social`}></use>
-          </svg>
+          </SvgIcon>
         </MenuBtn>
       </SocialLinkItem>
     </SocialLinkList>

@@ -10,7 +10,7 @@ export const HeroStyled = styled.section`
 
   p:first-child {
     position: absolute;
-    top: 36px;
+    top: 90px;
     left: 50%;
     transform: translateX(-50%);
   }

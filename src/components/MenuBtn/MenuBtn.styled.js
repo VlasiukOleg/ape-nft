@@ -12,10 +12,12 @@ export const MenuBtnStyled = styled.button`
   font-size: ${props => (props.fontSize ? props.fontSize : '12px')};
   font-weight: 600;
 
-  color: ${props =>
-    props.color ? props.color : props.theme.colors.secondaryBg};
+  color: ${({ theme, color }) =>
+    color ? theme.colors[color] : theme.colors.secondaryBg};
 
-  background-color: rgba(30, 30, 30, 0.1);
+  background-color: ${({ theme, colorbg }) =>
+    colorbg ? colorbg : 'rgba(30, 30, 30, 0.1)'};
+
   border-radius: 8px;
   border: none;
   outline: none;

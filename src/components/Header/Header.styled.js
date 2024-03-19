@@ -20,4 +20,6 @@ export const SiteNav = styled.nav`
 export const Logo = styled.svg`
   width: 32px;
   height: 24px;
+
+  fill: ${props => props.theme.colors.secondaryBg};
 `;
