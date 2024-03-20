@@ -28,6 +28,10 @@
   font-weight: 700;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Messina', monospace;
@@ -40,7 +44,6 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-transform: uppercase;
 }
 
 code {

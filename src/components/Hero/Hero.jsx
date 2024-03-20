@@ -4,6 +4,7 @@ import {
   ImgWrap,
   BtnWrap,
   Description,
+  InnerWrap,
 } from './Hero.styled';
 
 import { SectionTitle } from 'components/SectionTitle/SectionTitle';
@@ -26,7 +27,7 @@ export const Hero = () => {
         <picture>
           <source
             srcSet={`${imageDesktop1x} 1x,  ${imageDesktop2x} 2x`}
-            media="(min-width: 1024px)"
+            media="(min-width: 1280px)"
           />
           <source
             srcSet={`${imageTablet1x} 1x,  ${imageTablet2x} 2x`}
@@ -37,19 +38,25 @@ export const Hero = () => {
           <img src={imageDesktop1x} alt="Monkey" />
         </picture>
       </ImgWrap>
-      <BtnWrap>
-        <MenuBtn
-          padding={'12px 74px'}
-          font={'Right Grotesk Compact Black'}
-          fontSize={'16px'}
-        >
-          MEET APES
-        </MenuBtn>
-      </BtnWrap>
-      <Description>
-        Yacht Ape is a collection of unique digital apes that you can own in NFT
-        format
-      </Description>
+      <InnerWrap>
+        <BtnWrap>
+          <MenuBtn
+            padding={'12px 74px'}
+            font={'Right Grotesk Compact Black'}
+            fontSize={'16px'}
+            paddingTablet={'12px 61px'}
+            fsd={'28px'}
+            paddingDesktop={'16px 110px'}
+          >
+            MEET APES
+          </MenuBtn>
+        </BtnWrap>
+        <Description>
+          <span>Yacht Ape is a </span>
+          <span>collection</span> <span>of unique digital apes that you</span>
+          <span>can own in NFT format</span>
+        </Description>
+      </InnerWrap>
     </HeroStyled>
   );
 };

@@ -6,7 +6,7 @@ export const MenuBtnStyled = styled.button`
   align-items: center;
   /* width: 48px;
   height: 48px; */
-  padding: ${props => (props.padding ? props.padding : '16px 9px')};
+  padding: ${props => (props.padding ? props.padding : '17px 9px')};
 
   font-family: ${props => (props.font ? props.font : 'inherit')};
   font-size: ${props => (props.fontSize ? props.fontSize : '12px')};
@@ -23,4 +23,14 @@ export const MenuBtnStyled = styled.button`
   outline: none;
 
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    padding: ${props => props.paddingTablet && props.paddingTablet};
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: ${props => props.pd && props.pd};
+    font-size: ${props => (props.fsd ? props.fsd : '16px')};
+    padding: ${props => props.paddingDesktop && props.paddingDesktop};
+  }
 `;

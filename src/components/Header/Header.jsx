@@ -25,7 +25,9 @@ export const Header = () => {
         {isOpen ? (
           <DesktopBurgerMenu onCloseMenu={onToggleMenu} />
         ) : (
-          <MenuBtn onClick={onToggleMenu}>MENU</MenuBtn>
+          <MenuBtn onClick={onToggleMenu} pd={'30px 20px'}>
+            MENU
+          </MenuBtn>
         )}
       </SiteNav>
       <SocialLinkGroup />
