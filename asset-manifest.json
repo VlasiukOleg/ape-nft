@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.c99bf957.css",
-    "main.js": "/react-homework-template/static/js/main.4682637c.js",
-    "static/js/166.2a147c27.chunk.js": "/react-homework-template/static/js/166.2a147c27.chunk.js",
+    "main.css": "/react-homework-template/static/css/main.23430ce7.css",
+    "main.js": "/react-homework-template/static/js/main.d2bc7b47.js",
+    "static/js/166.43a8c636.chunk.js": "/react-homework-template/static/js/166.43a8c636.chunk.js",
     "static/media/hero-desktop@2x.png": "/react-homework-template/static/media/hero-desktop@2x.924a462718337df62d9a.png",
     "static/media/BiroScriptUSPlus-Bold.woff2": "/react-homework-template/static/media/BiroScriptUSPlus-Bold.2797649f18cf9d7ba0ba.woff2",
     "static/media/BiroScriptPlus-Bold.woff2": "/react-homework-template/static/media/BiroScriptPlus-Bold.ee2ea28fe92df0289248.woff2",
@@ -16,12 +16,12 @@
     "static/media/MessinaSansMono-SemiBold.woff2": "/react-homework-template/static/media/MessinaSansMono-SemiBold.c212b64fe491bf9fb5ad.woff2",
     "static/media/svg-sprite.svg": "/react-homework-template/static/media/svg-sprite.018ca2133a0888ccc401523b36bb2ba9.svg",
     "index.html": "/react-homework-template/index.html",
-    "main.c99bf957.css.map": "/react-homework-template/static/css/main.c99bf957.css.map",
-    "main.4682637c.js.map": "/react-homework-template/static/js/main.4682637c.js.map",
-    "166.2a147c27.chunk.js.map": "/react-homework-template/static/js/166.2a147c27.chunk.js.map"
+    "main.23430ce7.css.map": "/react-homework-template/static/css/main.23430ce7.css.map",
+    "main.d2bc7b47.js.map": "/react-homework-template/static/js/main.d2bc7b47.js.map",
+    "166.43a8c636.chunk.js.map": "/react-homework-template/static/js/166.43a8c636.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c99bf957.css",
-    "static/js/main.4682637c.js"
+    "static/css/main.23430ce7.css",
+    "static/js/main.d2bc7b47.js"
   ]
 }
