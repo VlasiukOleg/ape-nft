@@ -8,7 +8,11 @@ export const AboutSection = styled.section`
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
-    padding: 80px 72px 52px;
+    padding: 80px 72px 88px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 120px 108px 126px;
   }
 `;
 
@@ -21,12 +25,36 @@ export const Title = styled.h1`
 
   span {
     color: ${({ theme }) => theme.colors.accent};
+
+    span {
+      display: block;
+    }
   }
 
   @media screen and (min-width: 768px) {
     max-width: 269px;
+    margin-bottom: 68px;
 
     font-size: 60px;
+
+    span {
+      span {
+        display: inline-block;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 538px;
+    font-size: 120px;
+    margin-bottom: 56px;
+  }
+`;
+
+export const TextWrap = styled.div`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
   }
 `;
 
@@ -35,17 +63,10 @@ export const SvgIcon = styled.svg`
   width: 24px;
   height: 24px;
   margin: 0px auto;
-`;
 
-export const Description = styled.p`
-  margin-bottom: 36px;
-
-  font-size: 16px;
-  font-weight: 400;
-  text-align: right;
-
-  span {
-    display: block;
+  @media screen and (min-width: 1280px) {
+    width: 36px;
+    height: 36px;
   }
 `;
 
@@ -58,12 +79,40 @@ export const SubDescription = styled.p`
   ${SvgIcon} {
     margin-bottom: 16px;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    display: inline-block;
+
+    span {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+
+    span {
+      display: inline-block;
+    }
+  }
 `;
 
 export const ImgWrap = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 6px;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 54px;
+    right: 74px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: 84px;
+    right: 108px;
+  }
 `;
 
 export const Banner = styled.div`
@@ -94,5 +143,10 @@ export const Banner = styled.div`
 
   ${SvgIcon} {
     margin-left: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 64px;
+    padding: 8px 0 12px;
   }
 `;

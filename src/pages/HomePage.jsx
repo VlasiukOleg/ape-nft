@@ -11,6 +11,8 @@ import {
 } from 'components';
 
 const HomePage = () => {
+  const screenWidth = window.innerWidth;
+  console.log(screenWidth);
   return (
     <MainContainer>
       <Header />
