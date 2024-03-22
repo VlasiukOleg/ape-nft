@@ -80,3 +80,8 @@ ol {
 a {
   text-decoration: none;
 }
+
+.swiper-slide.swiper-slide-active {
+  display: flex;
+  justify-content: center;
+}
