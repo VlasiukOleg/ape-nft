@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledTitle = styled.h1`
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 
   font-family: 'Right Grotesk Compact Black';
   font-size: 40px;

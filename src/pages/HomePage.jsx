@@ -23,8 +23,8 @@ const HomePage = () => {
         <Faq />
         <Arts />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
     </MainContainer>
   );
 };

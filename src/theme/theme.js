@@ -6,4 +6,7 @@ export const theme = {
     secondaryText: '#1E1E1E',
     accent: '#DC3B5A',
   },
+  borderRadius: {
+    primary: '12px',
+  },
 };
