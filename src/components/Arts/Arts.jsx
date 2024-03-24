@@ -38,7 +38,7 @@ export const Arts = () => {
         }}
       >
         {slides.map(slide => (
-          <SwiperSlide>
+          <SwiperSlide key={slide}>
             {' '}
             <img src={slide} alt="Monkey" />
           </SwiperSlide>

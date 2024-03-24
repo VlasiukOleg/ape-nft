@@ -1,0 +1,81 @@
+import {
+  Form,
+  Input,
+  InputIcon,
+  SvgIconWrap,
+  Label,
+  ErrorMessage,
+} from './ContactForm.styled';
+
+import { MenuBtn } from 'components/MenuBtn/MenuBtn';
+import { Button } from 'components/Button/Button';
+
+import icon from '../../assets/icons/svg-sprite.svg';
+
+import * as Yup from 'yup';
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+
+const discordRegex = /^[A-Za-z@]+$/;
+const walletRegex = /^[0-9a-zA-Z]+$/;
+
+const contactValidationSchema = Yup.object({
+  discord: Yup.string()
+    .matches(discordRegex, 'WRONG discord')
+    .required('WRONG discord'),
+  address: Yup.string()
+    .matches(walletRegex, 'WRONG ADDRESS')
+    .required('WRONG ADDRESS'),
+});
+
+export const ContactForm = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({ resolver: yupResolver(contactValidationSchema) });
+
+  const onSubmit = data => {
+    alert(JSON.stringify(data));
+  };
+
+  return (
+    <Form onSubmit={handleSubmit(onSubmit)} autoComplete="off">
+      <Label>
+        <SvgIconWrap>
+          <InputIcon>
+            <use href={icon + `#icon-discord`}></use>
+          </InputIcon>
+        </SvgIconWrap>
+
+        <Input
+          name="discord"
+          type="text"
+          placeholder="@username"
+          {...register('discord')}
+        ></Input>
+        <ErrorMessage>{errors.discord?.message}</ErrorMessage>
+      </Label>
+
+      <Label>
+        <SvgIconWrap>
+          <InputIcon>
+            <use href={icon + `#icon-wallet`}></use>
+          </InputIcon>
+        </SvgIconWrap>
+
+        <Input
+          name="address"
+          type="text"
+          placeholder="Wallet address"
+          {...register('address')}
+        ></Input>
+        <ErrorMessage>{errors.address?.message}</ErrorMessage>
+      </Label>
+
+      <Button type="submit" $bgColor="accent" $color="light">
+        MINT
+      </Button>
+    </Form>
+  );
+};
