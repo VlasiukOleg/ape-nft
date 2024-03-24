@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/react-homework-template/static/css/main.dc842bcc.css",
-    "main.js": "/react-homework-template/static/js/main.39ae4674.js",
+    "main.js": "/react-homework-template/static/js/main.6f9cac14.js",
     "static/css/94.dcbb90de.chunk.css": "/react-homework-template/static/css/94.dcbb90de.chunk.css",
-    "static/js/94.902f39de.chunk.js": "/react-homework-template/static/js/94.902f39de.chunk.js",
-    "static/js/458.e704b759.chunk.js": "/react-homework-template/static/js/458.e704b759.chunk.js",
+    "static/js/94.69465ef1.chunk.js": "/react-homework-template/static/js/94.69465ef1.chunk.js",
+    "static/js/532.5769d89a.chunk.js": "/react-homework-template/static/js/532.5769d89a.chunk.js",
     "static/media/about-desktop@2x.png": "/react-homework-template/static/media/about-desktop@2x.f91b33203155f268f3fe.png",
     "static/media/hero-desktop@2x.png": "/react-homework-template/static/media/hero-desktop@2x.924a462718337df62d9a.png",
     "static/media/BiroScriptUSPlus-Bold.woff2": "/react-homework-template/static/media/BiroScriptUSPlus-Bold.2797649f18cf9d7ba0ba.woff2",
@@ -17,8 +17,16 @@
     "static/media/about-mobile@2x.png": "/react-homework-template/static/media/about-mobile@2x.12db59e5501ee49e3218.png",
     "static/media/hero-tablet@1x.png": "/react-homework-template/static/media/hero-tablet@1x.82aec5b0c4f2c5aed288.png",
     "static/media/about-tablet@1x.png": "/react-homework-template/static/media/about-tablet@1x.b2b708baf7fb9f696740.png",
+    "static/media/slide2.png": "/react-homework-template/static/media/slide2.e5aca6af166c0ce423b2.png",
+    "static/media/slide8.png": "/react-homework-template/static/media/slide8.d2f12dad2f10116459ce.png",
+    "static/media/slide3.png": "/react-homework-template/static/media/slide3.f0022fc3010ba4032642.png",
     "static/media/card-image-2.png": "/react-homework-template/static/media/card-image-2.9afa654b5fe5655412c1.png",
+    "static/media/slide4.png": "/react-homework-template/static/media/slide4.933f9164c7db6a6dfc5c.png",
+    "static/media/slide6.png": "/react-homework-template/static/media/slide6.53120c9737add4d3d3c8.png",
+    "static/media/slide1.png": "/react-homework-template/static/media/slide1.814ec747f446286f296b.png",
     "static/media/hero-mobile@1x.png": "/react-homework-template/static/media/hero-mobile@1x.72407fd847fe67c2ec85.png",
+    "static/media/slide7.png": "/react-homework-template/static/media/slide7.607e4cd360f142540bbb.png",
+    "static/media/slide5.png": "/react-homework-template/static/media/slide5.e357e2171fd88f38ec93.png",
     "static/media/card-image-1.png": "/react-homework-template/static/media/card-image-1.77b1d06fcabf3999d193.png",
     "static/media/card-image-4.png": "/react-homework-template/static/media/card-image-4.708d1114eb115a5ba63d.png",
     "static/media/card-image-3.png": "/react-homework-template/static/media/card-image-3.6e0cd931214445d946f7.png",
@@ -29,13 +37,13 @@
     "static/media/svg-sprite.svg": "/react-homework-template/static/media/svg-sprite.764d1bbd0de2299997caffe135bd61aa.svg",
     "index.html": "/react-homework-template/index.html",
     "main.dc842bcc.css.map": "/react-homework-template/static/css/main.dc842bcc.css.map",
-    "main.39ae4674.js.map": "/react-homework-template/static/js/main.39ae4674.js.map",
+    "main.6f9cac14.js.map": "/react-homework-template/static/js/main.6f9cac14.js.map",
     "94.dcbb90de.chunk.css.map": "/react-homework-template/static/css/94.dcbb90de.chunk.css.map",
-    "94.902f39de.chunk.js.map": "/react-homework-template/static/js/94.902f39de.chunk.js.map",
-    "458.e704b759.chunk.js.map": "/react-homework-template/static/js/458.e704b759.chunk.js.map"
+    "94.69465ef1.chunk.js.map": "/react-homework-template/static/js/94.69465ef1.chunk.js.map",
+    "532.5769d89a.chunk.js.map": "/react-homework-template/static/js/532.5769d89a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc842bcc.css",
-    "static/js/main.39ae4674.js"
+    "static/js/main.6f9cac14.js"
   ]
 }
