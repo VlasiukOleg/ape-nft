@@ -20,6 +20,13 @@ export const StyledButton = styled.button`
 
   cursor: pointer;
 
+  transition: color 250ms ease-in-out;
+
+  &:hover {
+    color: ${({ theme, $color }) =>
+      $color ? theme.colors.secondary : theme.colors.light};
+  }
+
   @media screen and (min-width: 1280px) {
     padding: 18px;
 

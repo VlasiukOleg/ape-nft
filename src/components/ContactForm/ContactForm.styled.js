@@ -32,10 +32,14 @@ export const Input = styled.input`
   font-size: 12px;
   font-weight: 400;
 
-  background-color: ${({ theme }) => theme.colors.primaryBg};
-  color: ${({ theme }) => theme.colors.primaryText};
+  background-color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme, error }) =>
+    error ? theme.colors.accent : theme.colors.light};
 
-  border: 1px solid ${({ theme }) => theme.colors.secondaryBg};
+  border: 1px solid
+    ${({ theme, error }) =>
+      error ? theme.colors.accent : theme.colors.secondary};
+
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 
@@ -49,7 +53,8 @@ export const Input = styled.input`
   }
 
   &:focus {
-    border-color: ${({ theme }) => theme.colors.primaryText};
+    border-color: ${({ theme, error }) =>
+      error ? theme.colors.accent : theme.colors.light};
   }
 
   @media screen and (min-width: 1280px) {

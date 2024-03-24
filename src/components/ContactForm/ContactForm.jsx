@@ -7,7 +7,6 @@ import {
   ErrorMessage,
 } from './ContactForm.styled';
 
-import { MenuBtn } from 'components/MenuBtn/MenuBtn';
 import { Button } from 'components/Button/Button';
 
 import icon from '../../assets/icons/svg-sprite.svg';
@@ -32,11 +31,15 @@ export const ContactForm = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
-  } = useForm({ resolver: yupResolver(contactValidationSchema) });
+    formState: { errors, isSubmitSuccessful },
+    reset,
+  } = useForm({
+    resolver: yupResolver(contactValidationSchema),
+    mode: 'onChange',
+  });
 
   const onSubmit = data => {
-    alert(JSON.stringify(data));
+    reset();
   };
 
   return (
@@ -53,6 +56,7 @@ export const ContactForm = () => {
           type="text"
           placeholder="@username"
           {...register('discord')}
+          error={errors.discord}
         ></Input>
         <ErrorMessage>{errors.discord?.message}</ErrorMessage>
       </Label>
@@ -69,12 +73,17 @@ export const ContactForm = () => {
           type="text"
           placeholder="Wallet address"
           {...register('address')}
+          error={errors.address}
         ></Input>
         <ErrorMessage>{errors.address?.message}</ErrorMessage>
       </Label>
 
       <Button type="submit" $bgColor="accent" $color="light">
-        MINT
+        {isSubmitSuccessful
+          ? 'MINTED'
+          : errors.address || errors.discord
+          ? 'ERROR'
+          : 'MINT'}
       </Button>
     </Form>
   );

@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
-export const FooterStyled = styled.section`
-  outline: 2px solid tomato;
+export const FooterDescription = styled.p`
+  font-weight: 400;
+  text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 `;
