@@ -4,7 +4,7 @@ export const Logo = styled.svg`
   width: 32px;
   height: 24px;
 
-  fill: ${props => props.theme.colors.primaryText};
+  fill: ${props => props.theme.colors.light};
 `;
 
 export const MobileBurgerMenuWrap = styled.div`
@@ -17,7 +17,7 @@ export const MobileBurgerMenuWrap = styled.div`
   width: 100vw;
   height: 100vh;
 
-  background-color: ${props => props.theme.colors.primaryBg};
+  background-color: ${props => props.theme.colors.primary};
 
   footer {
     text-align: center;

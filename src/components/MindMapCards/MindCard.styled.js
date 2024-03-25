@@ -9,7 +9,7 @@ export const MindCard = styled.div`
   max-width: 216px;
   min-height: 242px;
 
-  background-color: ${({ theme }) => theme.colors.secondaryBg};
+  background-color: ${({ theme }) => theme.colors.secondary};
   border-radius: 12px;
 
   @media screen and (min-width: 768px) {

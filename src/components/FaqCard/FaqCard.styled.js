@@ -49,7 +49,7 @@ export const Card = styled.div`
   padding: 8px 8px 10px;
 
   background-color: ${({ theme, open }) =>
-    open ? theme.colors.secondaryBg : 'transparent'};
+    open ? theme.colors.secondary : 'transparent'};
   border-radius: ${({ theme }) => theme.borderRadius.primary};
 
   @media screen and (min-width: 768px) {
@@ -74,7 +74,7 @@ export const CardNumber = styled.div`
   line-height: 1.7;
 
   color: ${({ theme, open }) =>
-    open ? theme.colors.primaryText : theme.colors.accent};
+    open ? theme.colors.light : theme.colors.accent};
 
   @media screen and (min-width: 768px) {
     margin-right: 21px;

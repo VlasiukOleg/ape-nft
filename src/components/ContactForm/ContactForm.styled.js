@@ -68,7 +68,7 @@ export const SvgIconWrap = styled.div`
   align-items: center;
   padding: 12px;
 
-  background-color: ${({ theme }) => theme.colors.secondaryBg};
+  background-color: ${({ theme }) => theme.colors.secondary};
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
 `;

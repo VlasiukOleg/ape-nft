@@ -5,7 +5,7 @@ export const Title = styled.h1`
   font-size: 44px;
   line-height: 1;
 
-  color: ${props => props.theme.colors.secondaryBg};
+  color: ${props => props.theme.colors.secondary};
 
   @media screen and (min-width: 768px) {
     position: relative;

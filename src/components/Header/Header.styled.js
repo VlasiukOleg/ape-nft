@@ -8,7 +8,6 @@ export const HeaderStyled = styled.header`
   background-color: ${props => props.theme.colors.accent};
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
-  outline: 1px solid tomato;
 
   @media screen and (min-width: 768px) {
     padding-left: 12px;

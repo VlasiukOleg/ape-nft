@@ -10,7 +10,7 @@ export const SubTitle = styled.p`
     text-transform: uppercase;
   }
 
-  color: ${props => props.theme.colors.secondaryBg};
+  color: ${props => props.theme.colors.secondary};
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -31,7 +31,6 @@ export const HeroStyled = styled.section`
   background-color: ${props => props.theme.colors.accent};
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
-  outline: 2px solid tomato;
 
   @media screen and (min-width: 768px) {
     padding: 64px 72px 10px;
@@ -75,7 +74,7 @@ export const Description = styled.p`
 
   text-transform: uppercase;
 
-  color: ${props => props.theme.colors.secondaryBg};
+  color: ${props => props.theme.colors.secondary};
 
   @media screen and (min-width: 768px) {
     max-width: 190px;

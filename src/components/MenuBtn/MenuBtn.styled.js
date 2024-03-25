@@ -12,7 +12,7 @@ export const MenuBtnStyled = styled.button`
   font-weight: 600;
 
   color: ${({ theme, color }) =>
-    color ? theme.colors[color] : theme.colors.secondaryBg};
+    color ? theme.colors[color] : theme.colors.secondary};
 
   background-color: ${({ colorbg }) =>
     colorbg ? colorbg : 'rgba(30, 30, 30, 0.1)'};

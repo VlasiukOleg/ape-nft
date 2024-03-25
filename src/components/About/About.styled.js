@@ -4,7 +4,6 @@ export const AboutSection = styled.section`
   position: relative;
   padding: 60px 64px 52px;
 
-  outline: 2px solid tomato;
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
