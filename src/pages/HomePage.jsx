@@ -17,12 +17,10 @@ const HomePage = () => {
   const aboutRef = useRef();
   const mindMapRef = useRef();
   const faqRef = useRef();
-  const artsRef = useRef()
+  const artsRef = useRef();
 
   const ref = { contactRef, aboutRef, mindMapRef, faqRef, artsRef };
 
-  const screenWidth = window.innerWidth;
-  console.log(screenWidth);
   return (
     <MainContainer>
       <Header ref={ref} />

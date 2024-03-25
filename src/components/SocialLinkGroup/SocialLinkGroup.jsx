@@ -25,7 +25,7 @@ export const SocialLinkGroup = ({ colorbg, fill }) => {
         </MenuBtn>
       </SocialLinkItem>
       <SocialLinkItem>
-        <MenuBtn colorbg={colorbg} pd={'28px 28px'}>
+        <MenuBtn colorbg={colorbg}>
           <SvgIcon fill={fill}>
             <use href={icon + `#icon-x-social`}></use>
           </SvgIcon>
