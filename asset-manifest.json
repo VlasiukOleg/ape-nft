@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/ape-nft/static/css/main.681f2633.css",
-    "main.js": "/ape-nft/static/js/main.58d7662e.js",
-    "static/css/805.fb72e3c7.chunk.css": "/ape-nft/static/css/805.fb72e3c7.chunk.css",
-    "static/js/805.797a6d96.chunk.js": "/ape-nft/static/js/805.797a6d96.chunk.js",
+    "main.css": "/ape-nft/static/css/main.2d3c91fa.css",
+    "main.js": "/ape-nft/static/js/main.d73a07f1.js",
+    "static/css/924.7c3ad271.chunk.css": "/ape-nft/static/css/924.7c3ad271.chunk.css",
+    "static/js/924.9ab0e861.chunk.js": "/ape-nft/static/js/924.9ab0e861.chunk.js",
     "static/js/532.5769d89a.chunk.js": "/ape-nft/static/js/532.5769d89a.chunk.js",
     "static/media/about-desktop@2x.png": "/ape-nft/static/media/about-desktop@2x.f91b33203155f268f3fe.png",
     "static/media/hero-desktop@2x.png": "/ape-nft/static/media/hero-desktop@2x.924a462718337df62d9a.png",
@@ -36,14 +36,14 @@
     "static/media/MessinaSansMono-SemiBold.woff2": "/ape-nft/static/media/MessinaSansMono-SemiBold.c212b64fe491bf9fb5ad.woff2",
     "static/media/svg-sprite.svg": "/ape-nft/static/media/svg-sprite.764d1bbd0de2299997caffe135bd61aa.svg",
     "index.html": "/ape-nft/index.html",
-    "main.681f2633.css.map": "/ape-nft/static/css/main.681f2633.css.map",
-    "main.58d7662e.js.map": "/ape-nft/static/js/main.58d7662e.js.map",
-    "805.fb72e3c7.chunk.css.map": "/ape-nft/static/css/805.fb72e3c7.chunk.css.map",
-    "805.797a6d96.chunk.js.map": "/ape-nft/static/js/805.797a6d96.chunk.js.map",
+    "main.2d3c91fa.css.map": "/ape-nft/static/css/main.2d3c91fa.css.map",
+    "main.d73a07f1.js.map": "/ape-nft/static/js/main.d73a07f1.js.map",
+    "924.7c3ad271.chunk.css.map": "/ape-nft/static/css/924.7c3ad271.chunk.css.map",
+    "924.9ab0e861.chunk.js.map": "/ape-nft/static/js/924.9ab0e861.chunk.js.map",
     "532.5769d89a.chunk.js.map": "/ape-nft/static/js/532.5769d89a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.681f2633.css",
-    "static/js/main.58d7662e.js"
+    "static/css/main.2d3c91fa.css",
+    "static/js/main.d73a07f1.js"
   ]
 }
