@@ -23,6 +23,12 @@ export const MenuBtnStyled = styled.button`
 
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    color: ${({ theme }) => theme.colors.light};
+    fill: ${({ theme }) => theme.colors.light};
+  }
+
   @media screen and (min-width: 768px) {
     padding: ${({ $paddingTablet }) => $paddingTablet || '12px'};
   }
