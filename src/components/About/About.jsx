@@ -6,7 +6,6 @@ import {
   SvgIcon,
   ImgWrap,
   SubDescription,
-  Banner,
   TextWrap,
 } from './About.styled';
 
@@ -58,47 +57,6 @@ export const About = forwardRef((props, ref) => {
           <img src={imageDesktop1x} alt="Monkey" />
         </picture>
       </ImgWrap>
-      <Banner>
-        <p>
-          HAVE NO LIMITS{' '}
-          <SvgIcon>
-            <use href={icon + `#icon-cross`}></use>
-          </SvgIcon>
-        </p>
-
-        <p>
-          Break rules{' '}
-          <SvgIcon>
-            <use href={icon + `#icon-cross`}></use>
-          </SvgIcon>
-        </p>
-        <p>
-          Destroy stereotypes{' '}
-          <SvgIcon>
-            <use href={icon + `#icon-cross`}></use>
-          </SvgIcon>
-        </p>
-
-        <p>
-          HAVE NO LIMITS{' '}
-          <SvgIcon>
-            <use href={icon + `#icon-cross`}></use>
-          </SvgIcon>
-        </p>
-
-        <p>
-          Break rules{' '}
-          <SvgIcon>
-            <use href={icon + `#icon-cross`}></use>
-          </SvgIcon>
-        </p>
-        <p>
-          Destroy stereotypes{' '}
-          <SvgIcon>
-            <use href={icon + `#icon-cross`}></use>
-          </SvgIcon>
-        </p>
-      </Banner>
     </AboutSection>
   );
 });

@@ -23,6 +23,7 @@ export const SubTitle = styled.p`
 `;
 
 export const HeroStyled = styled.section`
+  position: relative;
   text-align: center;
 
   padding-top: 8px;
@@ -42,7 +43,7 @@ export const HeroStyled = styled.section`
 
   ${SubTitle}:first-child {
     position: absolute;
-    top: 85px;
+    top: -27px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -103,14 +104,14 @@ export const ImgWrap = styled.div`
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    top: 89px;
-    left: 225px;
+    top: -23px;
+    left: 206px;
 
     margin-top: 0px;
   }
 
   @media screen and (min-width: 1280px) {
-    top: 81px;
+    top: -38px;
     left: 384px;
   }
 `;

@@ -4,6 +4,7 @@ export const SocialLinkList = styled.ul`
   position: absolute;
   top: 64px;
   right: 8px;
+  z-index: 1;
 
   @media screen and (min-width: 768px) {
     right: 12px;

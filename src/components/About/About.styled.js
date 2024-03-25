@@ -2,16 +2,16 @@ import styled from 'styled-components';
 
 export const AboutSection = styled.section`
   position: relative;
-  padding: 60px 64px 52px;
+  padding: 60px 64px 0px;
 
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
-    padding: 80px 72px 88px;
+    padding: 80px 72px 36px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 120px 108px 126px;
+    padding: 120px 108px 40px;
   }
 `;
 
@@ -94,12 +94,12 @@ export const ImgWrap = styled.div`
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    bottom: 54px;
+    bottom: 0px;
     right: 74px;
   }
 
   @media screen and (min-width: 1280px) {
-    bottom: 84px;
+    bottom: 0px;
     right: 108px;
   }
 `;
