@@ -77,6 +77,7 @@ export const MobileBurgerMenu = forwardRef(({ onCloseMenu }, ref) => {
           <SocialLinkGroup colorbg={'rgba(255, 255, 255, 0.1)'} fill="#fff" />
         </MobileMenuInnerWrap>
       </MainContainer>
+      <footer>© Yacht ape 2024 all rights reserved</footer>
     </MobileBurgerMenuWrap>,
 
     document.querySelector('#burger-menu-root')

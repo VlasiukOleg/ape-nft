@@ -19,6 +19,14 @@ export const MobileBurgerMenuWrap = styled.div`
 
   background-color: ${props => props.theme.colors.primaryBg};
 
+  footer {
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
