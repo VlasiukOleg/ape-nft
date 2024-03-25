@@ -30,7 +30,7 @@ export const Arts = forwardRef((props, ref) => {
       <Swiper
         breakpoints={{
           768: { slidesPerView: 2, spaceBetween: 24 },
-          1280: { slidesPerView: 4 },
+          1280: { slidesPerView: 4, spaceBetween: 24 },
         }}
         className="mySwiper"
         onSwiper={swiper => {
