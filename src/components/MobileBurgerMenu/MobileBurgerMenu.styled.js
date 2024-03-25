@@ -12,6 +12,8 @@ export const MobileBurgerMenuWrap = styled.div`
   top: 0;
   left: 0;
 
+  z-index: 1000;
+
   width: 100vw;
   height: 100vh;
 
@@ -44,9 +46,19 @@ export const SiteNavLinkList = styled.ul`
 `;
 
 export const SiteNavLinkItem = styled.li`
-  font-size: 24px;
-
   &:not(:last-child) {
     margin-bottom: 16px;
   }
+`;
+
+export const NavLinkBtn = styled.button`
+  width: 100%;
+
+  font-family: Messina, monospace;
+  font-size: 24px;
+
+  background-color: transparent;
+  color: ${({ theme }) => theme.colors.light};
+  border: none;
+  outline: none;
 `;

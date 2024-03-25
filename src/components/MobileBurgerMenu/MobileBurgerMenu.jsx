@@ -1,4 +1,5 @@
 import PortalReactDOM from 'react-dom';
+import { forwardRef } from 'react';
 
 import {
   Logo,
@@ -7,6 +8,7 @@ import {
   SiteNav,
   SiteNavLinkList,
   SiteNavLinkItem,
+  NavLinkBtn,
 } from './MobileBurgerMenu.styled';
 
 import { MenuBtn } from 'components/MenuBtn/MenuBtn';
@@ -15,7 +17,14 @@ import { MainContainer } from 'components';
 
 import icon from '../../assets/icons/svg-sprite.svg';
 
-export const MobileBurgerMenu = ({ onCloseMenu }) => {
+export const MobileBurgerMenu = forwardRef(({ onCloseMenu }, ref) => {
+  const { aboutRef, mindMapRef, faqRef, artsRef, contactRef } = ref;
+
+  const onhandleMenuBtnClick = refName => {
+    onCloseMenu();
+    refName.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return PortalReactDOM.createPortal(
     <MobileBurgerMenuWrap>
       <MainContainer>
@@ -25,11 +34,35 @@ export const MobileBurgerMenu = ({ onCloseMenu }) => {
               <use href={icon + `#icon-logo`}></use>
             </Logo>
             <SiteNavLinkList>
-              <SiteNavLinkItem>ABOUT</SiteNavLinkItem>
-              <SiteNavLinkItem>M-MAP</SiteNavLinkItem>
-              <SiteNavLinkItem>FAQ</SiteNavLinkItem>
-              <SiteNavLinkItem>ARTS</SiteNavLinkItem>
-              <SiteNavLinkItem>MINT</SiteNavLinkItem>
+              <SiteNavLinkItem>
+                <NavLinkBtn onClick={() => onhandleMenuBtnClick(aboutRef)}>
+                  ABOUT
+                </NavLinkBtn>
+              </SiteNavLinkItem>
+              <SiteNavLinkItem>
+                {' '}
+                <NavLinkBtn onClick={() => onhandleMenuBtnClick(mindMapRef)}>
+                  M-MAP
+                </NavLinkBtn>
+              </SiteNavLinkItem>
+              <SiteNavLinkItem>
+                {' '}
+                <NavLinkBtn onClick={() => onhandleMenuBtnClick(faqRef)}>
+                  FAQ
+                </NavLinkBtn>
+              </SiteNavLinkItem>
+              <SiteNavLinkItem>
+                {' '}
+                <NavLinkBtn onClick={() => onhandleMenuBtnClick(artsRef)}>
+                  ARTS
+                </NavLinkBtn>
+              </SiteNavLinkItem>
+              <SiteNavLinkItem>
+                {' '}
+                <NavLinkBtn onClick={() => onhandleMenuBtnClick(contactRef)}>
+                  MINT
+                </NavLinkBtn>
+              </SiteNavLinkItem>
             </SiteNavLinkList>
             <MenuBtn
               color={'primaryText'}
@@ -48,4 +81,4 @@ export const MobileBurgerMenu = ({ onCloseMenu }) => {
 
     document.querySelector('#burger-menu-root')
   );
-};
+});

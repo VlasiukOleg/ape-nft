@@ -41,7 +41,7 @@ export const Header = forwardRef((props, ref) => {
         )}
       </SiteNav>
       <SocialLinkGroup />
-      {isOpen && <MobileBurgerMenu onCloseMenu={onToggleMenu} />}
+      {isOpen && <MobileBurgerMenu onCloseMenu={onToggleMenu} ref={ref} />}
     </HeaderStyled>
   );
 });
