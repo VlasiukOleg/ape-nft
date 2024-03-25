@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { forwardRef, useRef } from 'react';
 
 import { Section } from 'components/Section/Section';
 import { Title } from 'components/Title/Title';
@@ -14,7 +14,7 @@ import 'swiper/css/navigation';
 
 import { slides } from './images';
 
-export const Arts = () => {
+export const Arts = forwardRef((props, ref) => {
   const swiperRef = useRef();
 
   const onHandleNextBtn = () => {
@@ -25,29 +25,31 @@ export const Arts = () => {
     swiperRef.current.slidePrev();
   };
   return (
-    <Section>
-      <Title>COLLECTION</Title>
-      <Swiper
-        breakpoints={{
-          768: { slidesPerView: 2, spaceBetween: 24 },
-          1280: { slidesPerView: 4 },
-        }}
-        className="mySwiper"
-        onSwiper={swiper => {
-          swiperRef.current = swiper;
-        }}
-      >
-        {slides.map(slide => (
-          <SwiperSlide key={slide}>
-            {' '}
-            <img src={slide} alt="Monkey" />
-          </SwiperSlide>
-        ))}
-        <SwiperBtnWrap>
-          <SwiperBtn onHandleClick={onHandlePrevBtn}>Prev</SwiperBtn>
-          <SwiperBtn onHandleClick={onHandleNextBtn}>Next</SwiperBtn>
-        </SwiperBtnWrap>
-      </Swiper>
-    </Section>
+    <div ref={ref}>
+      <Section>
+        <Title>COLLECTION</Title>
+        <Swiper
+          breakpoints={{
+            768: { slidesPerView: 2, spaceBetween: 24 },
+            1280: { slidesPerView: 4 },
+          }}
+          className="mySwiper"
+          onSwiper={swiper => {
+            swiperRef.current = swiper;
+          }}
+        >
+          {slides.map(slide => (
+            <SwiperSlide key={slide}>
+              {' '}
+              <img src={slide} alt="Monkey" />
+            </SwiperSlide>
+          ))}
+          <SwiperBtnWrap>
+            <SwiperBtn onHandleClick={onHandlePrevBtn}>Prev</SwiperBtn>
+            <SwiperBtn onHandleClick={onHandleNextBtn}>Next</SwiperBtn>
+          </SwiperBtnWrap>
+        </Swiper>
+      </Section>
+    </div>
   );
-};
+});

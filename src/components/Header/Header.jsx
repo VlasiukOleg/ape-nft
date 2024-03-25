@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { forwardRef } from 'react';
 import { Link } from 'react-router-dom';
 
 import { HeaderStyled, SiteNav } from './Header.styled';
@@ -11,7 +12,7 @@ import { SocialLinkGroup } from 'components/SocialLinkGroup/SocialLinkGroup';
 import { MobileBurgerMenu } from 'components/MobileBurgerMenu/MobileBurgerMenu';
 import { DesktopBurgerMenu } from 'components/DesktopBurgerMenu/DesktopBurgerMenu';
 
-export const Header = () => {
+export const Header = forwardRef((props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const onToggleMenu = () => {
@@ -27,7 +28,7 @@ export const Header = () => {
         </Link>
 
         {isOpen ? (
-          <DesktopBurgerMenu onCloseMenu={onToggleMenu} />
+          <DesktopBurgerMenu onCloseMenu={onToggleMenu} ref={ref} />
         ) : (
           <MenuBtn
             onClick={onToggleMenu}
@@ -43,4 +44,4 @@ export const Header = () => {
       {isOpen && <MobileBurgerMenu onCloseMenu={onToggleMenu} />}
     </HeaderStyled>
   );
-};
+});
