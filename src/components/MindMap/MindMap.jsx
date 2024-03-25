@@ -1,6 +1,5 @@
 import { useRef } from 'react';
 import { forwardRef } from 'react';
-import { SwiperBtnWrap, SwiperWrap } from './MindMap.styled';
 
 import { Section } from 'components/Section/Section';
 import { Title } from 'components/Title/Title';
@@ -15,6 +14,21 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+
+import styled from 'styled-components';
+
+export const SwiperBtnWrap = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 24px;
+`;
+
+export const SwiperWrap = styled.div`
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
 
 export const MindMap = forwardRef((props, ref) => {
   const swiperRef = useRef();
