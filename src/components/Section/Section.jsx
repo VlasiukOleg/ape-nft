@@ -1,5 +1,7 @@
+import { forwardRef } from 'react';
+
 import { StyledSection } from './Section.styled';
 
-export const Section = ({ children }) => {
-  return <StyledSection>{children}</StyledSection>;
-};
+export const Section = forwardRef(({ children }, ref) => {
+  return <StyledSection ref={ref}>{children}</StyledSection>;
+});

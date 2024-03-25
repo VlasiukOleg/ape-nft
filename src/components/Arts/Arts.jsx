@@ -25,31 +25,29 @@ export const Arts = forwardRef((props, ref) => {
     swiperRef.current.slidePrev();
   };
   return (
-    <div ref={ref}>
-      <Section>
-        <Title>COLLECTION</Title>
-        <Swiper
-          breakpoints={{
-            768: { slidesPerView: 2, spaceBetween: 24 },
-            1280: { slidesPerView: 4 },
-          }}
-          className="mySwiper"
-          onSwiper={swiper => {
-            swiperRef.current = swiper;
-          }}
-        >
-          {slides.map(slide => (
-            <SwiperSlide key={slide}>
-              {' '}
-              <img src={slide} alt="Monkey" />
-            </SwiperSlide>
-          ))}
-          <SwiperBtnWrap>
-            <SwiperBtn onHandleClick={onHandlePrevBtn}>Prev</SwiperBtn>
-            <SwiperBtn onHandleClick={onHandleNextBtn}>Next</SwiperBtn>
-          </SwiperBtnWrap>
-        </Swiper>
-      </Section>
-    </div>
+    <Section ref={ref}>
+      <Title>COLLECTION</Title>
+      <Swiper
+        breakpoints={{
+          768: { slidesPerView: 2, spaceBetween: 24 },
+          1280: { slidesPerView: 4 },
+        }}
+        className="mySwiper"
+        onSwiper={swiper => {
+          swiperRef.current = swiper;
+        }}
+      >
+        {slides.map(slide => (
+          <SwiperSlide key={slide}>
+            {' '}
+            <img src={slide} alt="Monkey" />
+          </SwiperSlide>
+        ))}
+        <SwiperBtnWrap>
+          <SwiperBtn onHandleClick={onHandlePrevBtn}>Prev</SwiperBtn>
+          <SwiperBtn onHandleClick={onHandleNextBtn}>Next</SwiperBtn>
+        </SwiperBtnWrap>
+      </Swiper>
+    </Section>
   );
 });

@@ -8,7 +8,7 @@ export const SvgIcon = styled.svg`
   display: block;
   width: 36px;
   height: 36px;
-  margin: 0px auto;
+  margin: 0px auto 16px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 24px;

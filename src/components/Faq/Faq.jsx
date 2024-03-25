@@ -9,11 +9,9 @@ import { FaqCardList } from 'components/FaqCardList/FaqCardLIst';
 
 export const Faq = forwardRef((props, ref) => {
   return (
-    <div ref={ref}>
-      <Section>
-        <Title>FAQ</Title>
-        <FaqCardList cards={cards} />
-      </Section>
-    </div>
+    <Section ref={ref}>
+      <Title>FAQ</Title>
+      <FaqCardList cards={cards} />
+    </Section>
   );
 });

@@ -10,18 +10,16 @@ import icon from '../../assets/icons/svg-sprite.svg';
 
 export const Contact = forwardRef((props, ref) => {
   return (
-    <div ref={ref}>
-      <Section>
-        <Title>Are you in?</Title>
-        <SvgIcon>
-          <use href={icon + `#icon-cross`}></use>
-        </SvgIcon>
-        <Description>
-          Join the YACHT APE community to be one of the first to receive our
-          limited edition NFT
-        </Description>
-        <ContactForm />
-      </Section>
-    </div>
+    <Section ref={ref}>
+      <Title>Are you in?</Title>
+      <SvgIcon>
+        <use href={icon + `#icon-cross`}></use>
+      </SvgIcon>
+      <Description>
+        Join the YACHT APE community to be one of the first to receive our
+        limited edition NFT
+      </Description>
+      <ContactForm />
+    </Section>
   );
 });
