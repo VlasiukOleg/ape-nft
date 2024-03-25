@@ -34,7 +34,7 @@ export const MobileBurgerMenu = ({ onCloseMenu }) => {
             <MenuBtn
               color={'primaryText'}
               colorbg={'rgba(255, 255, 255, 0.1)'}
-              padding={'17px 5px'}
+              $padding="17px 5px"
               onClick={onCloseMenu}
             >
               CLOSE

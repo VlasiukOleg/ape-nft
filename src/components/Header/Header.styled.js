@@ -30,7 +30,14 @@ export const Logo = styled.svg`
   width: 32px;
   height: 24px;
 
-  fill: ${props => props.theme.colors.secondaryBg};
+  fill: ${props => props.theme.colors.secondary};
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: ${({ theme }) => theme.colors.light};
+  }
 
   @media screen and (min-width: 768px) {
     width: 48px;

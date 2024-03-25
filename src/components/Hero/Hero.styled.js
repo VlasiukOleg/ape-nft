@@ -4,6 +4,11 @@ export const SubTitle = styled.p`
   font-family: BiroScriptPlus;
   font-size: 16px;
   line-height: 1.7;
+  text-transform: lowercase;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
 
   color: ${props => props.theme.colors.secondaryBg};
 
@@ -33,7 +38,7 @@ export const HeroStyled = styled.section`
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 93px 115px 80px;
+    padding: 93px 115px 62px;
   }
 
   ${SubTitle}:first-child {
@@ -59,7 +64,7 @@ export const HeroStyled = styled.section`
       margin-top: 30px;
 
       position: relative;
-      left: 120px;
+      left: 125px;
     }
   }
 `;

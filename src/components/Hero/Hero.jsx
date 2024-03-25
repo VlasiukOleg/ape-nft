@@ -10,7 +10,7 @@ import {
 } from './Hero.styled';
 
 import { SectionTitle } from 'components/SectionTitle/SectionTitle';
-import { MenuBtn } from 'components/MenuBtn/MenuBtn';
+
 import { Button } from 'components/Button/Button';
 
 import imageMobile1x from '../../assets/images/hero/hero-mobile@1x.png';

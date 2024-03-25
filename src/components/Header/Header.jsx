@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { HeaderStyled, SiteNav } from './Header.styled';
 import icon from '../../assets/icons/svg-sprite.svg';
@@ -19,13 +20,21 @@ export const Header = () => {
   return (
     <HeaderStyled>
       <SiteNav>
-        <Logo>
-          <use href={icon + `#icon-logo`}></use>
-        </Logo>
+        <Link to="/">
+          <Logo>
+            <use href={icon + `#icon-logo`}></use>
+          </Logo>
+        </Link>
+
         {isOpen ? (
           <DesktopBurgerMenu onCloseMenu={onToggleMenu} />
         ) : (
-          <MenuBtn onClick={onToggleMenu} pd={'30px 20px'}>
+          <MenuBtn
+            onClick={onToggleMenu}
+            $padding="17px 9px"
+            $paddingTablet="17px 9px"
+            $paddingDesktop="30px 20px"
+          >
             MENU
           </MenuBtn>
         )}

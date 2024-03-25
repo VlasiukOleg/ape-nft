@@ -4,9 +4,8 @@ export const MenuBtnStyled = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 48px;
-  height: 48px; */
-  padding: ${props => (props.padding ? props.padding : '17px 9px')};
+
+  padding: ${({ $padding }) => $padding || '16px'};
 
   font-family: ${props => (props.font ? props.font : 'inherit')};
   font-size: ${props => (props.fontSize ? props.fontSize : '12px')};
@@ -15,7 +14,7 @@ export const MenuBtnStyled = styled.button`
   color: ${({ theme, color }) =>
     color ? theme.colors[color] : theme.colors.secondaryBg};
 
-  background-color: ${({ theme, colorbg }) =>
+  background-color: ${({ colorbg }) =>
     colorbg ? colorbg : 'rgba(30, 30, 30, 0.1)'};
 
   border-radius: 8px;
@@ -25,12 +24,12 @@ export const MenuBtnStyled = styled.button`
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
-    padding: ${props => props.paddingTablet && props.paddingTablet};
+    padding: ${({ $paddingTablet }) => $paddingTablet || '12px'};
   }
 
   @media screen and (min-width: 1280px) {
-    padding: ${props => props.pd && props.pd};
     font-size: ${props => (props.fsd ? props.fsd : '16px')};
-    padding: ${props => props.paddingDesktop && props.paddingDesktop};
+
+    padding: ${({ $paddingDesktop }) => $paddingDesktop || '28px'};
   }
 `;

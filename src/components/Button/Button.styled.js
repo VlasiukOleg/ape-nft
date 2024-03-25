@@ -28,8 +28,12 @@ export const StyledButton = styled.button`
       $color ? theme.colors.secondary : theme.colors.light};
   }
 
+  @media screen and (min-width: 768px) {
+    padding: 10px 61px;
+  }
+
   @media screen and (min-width: 1280px) {
-    padding: 18px;
+    padding: 18px 110px;
 
     font-size: 28px;
   }
