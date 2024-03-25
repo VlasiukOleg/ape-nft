@@ -25,23 +25,13 @@ export const Title = styled.h1`
 
   span {
     color: ${({ theme }) => theme.colors.accent};
-
-    span {
-      display: block;
-    }
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 269px;
+    max-width: 272px;
     margin-bottom: 68px;
 
     font-size: 60px;
-
-    span {
-      span {
-        display: inline-block;
-      }
-    }
   }
 
   @media screen and (min-width: 1280px) {

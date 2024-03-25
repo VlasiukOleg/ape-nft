@@ -8,7 +8,7 @@ import {
   TextWrap,
 } from './About.styled';
 
-import { DesktopDescription } from './Description/Description';
+import { Description } from './Description/Description';
 
 import icon from '../../assets/icons/svg-sprite.svg';
 
@@ -27,10 +27,10 @@ export const About = () => {
           a Story that started <br />
           with&nbsp;
           <span>
-            one <br /> simple ape
+            one <br /> simple <span>ape</span>
           </span>
         </Title>
-        <DesktopDescription />
+        <Description />
       </TextWrap>
 
       <SubDescription>

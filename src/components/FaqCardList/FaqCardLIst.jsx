@@ -4,9 +4,10 @@ import { FaqCard } from 'components/FaqCard/FaqCard';
 
 export const FaqCardList = ({ cards }) => {
   const [cardOpenIndex, setIsCardOpen] = useState(0);
+  console.log(cardOpenIndex);
 
   const onToggleCard = index => {
-    setIsCardOpen(cardOpenIndex === index ? null : index);
+    setIsCardOpen(prevIndex => (prevIndex === index ? null : index));
   };
 
   return (

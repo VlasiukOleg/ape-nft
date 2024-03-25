@@ -12,12 +12,17 @@ export const TitleBtn = styled.button`
   background-color: transparent;
 
   color: ${({ theme, open }) =>
-    open ? theme.colors.accent : theme.colors.primaryText};
+    open ? theme.colors.accent : theme.colors.light};
 
   border: none;
   outline: none;
 
   cursor: pointer;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.accent};
+  }
+
   @media screen and (min-width: 768px) {
     margin-bottom: 36px;
 

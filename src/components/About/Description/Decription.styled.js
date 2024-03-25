@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Description = styled.p`
+export const StyledDescription = styled.p`
   margin-bottom: 36px;
 
   font-size: 16px;

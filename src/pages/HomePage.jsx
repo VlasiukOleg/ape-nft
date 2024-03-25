@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+
 import {
   MainContainer,
   Header,
@@ -11,18 +13,20 @@ import {
 } from 'components';
 
 const HomePage = () => {
+  const contactRef = useRef();
+
   const screenWidth = window.innerWidth;
   console.log(screenWidth);
   return (
     <MainContainer>
       <Header />
       <main>
-        <Hero />
+        <Hero ref={contactRef} />
         <About />
         <MindMap />
         <Faq />
         <Arts />
-        <Contact />
+        <Contact ref={contactRef} />
       </main>
       <Footer />
     </MainContainer>

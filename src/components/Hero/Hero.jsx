@@ -1,3 +1,5 @@
+import { forwardRef } from 'react';
+
 import {
   HeroStyled,
   SubTitle,
@@ -9,6 +11,7 @@ import {
 
 import { SectionTitle } from 'components/SectionTitle/SectionTitle';
 import { MenuBtn } from 'components/MenuBtn/MenuBtn';
+import { Button } from 'components/Button/Button';
 
 import imageMobile1x from '../../assets/images/hero/hero-mobile@1x.png';
 import imageMobile2x from '../../assets/images/hero/hero-mobile@2x.png';
@@ -17,7 +20,7 @@ import imageTablet2x from '../../assets/images/hero/hero-tablet@2x.png';
 import imageDesktop1x from '../../assets/images/hero/hero-desktop@1x.png';
 import imageDesktop2x from '../../assets/images/hero/hero-desktop@2x.png';
 
-export const Hero = () => {
+export const Hero = forwardRef((props, ref) => {
   return (
     <HeroStyled>
       <SubTitle>diD yOu seE iT ?</SubTitle>
@@ -40,16 +43,11 @@ export const Hero = () => {
       </ImgWrap>
       <InnerWrap>
         <BtnWrap>
-          <MenuBtn
-            padding={'12px 74px'}
-            font={'Right Grotesk Compact Black'}
-            fontSize={'16px'}
-            paddingTablet={'12px 61px'}
-            fsd={'28px'}
-            paddingDesktop={'16px 110px'}
+          <Button
+            onClick={() => ref.current?.scrollIntoView({ behavior: 'smooth' })}
           >
             MEET APES
-          </MenuBtn>
+          </Button>
         </BtnWrap>
         <Description>
           <span>Yacht Ape is a </span>
@@ -59,4 +57,4 @@ export const Hero = () => {
       </InnerWrap>
     </HeroStyled>
   );
-};
+});

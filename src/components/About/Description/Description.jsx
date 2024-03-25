@@ -1,8 +1,8 @@
-import { Description } from './Decription.styled';
+import { StyledDescription } from './Decription.styled';
 
 import { useState, useEffect } from 'react';
 
-export const DesktopDescription = () => {
+export const Description = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const handleResize = () => {
@@ -20,7 +20,7 @@ export const DesktopDescription = () => {
   return (
     <>
       {screenWidth < 768 ? (
-        <Description>
+        <StyledDescription>
           <span>WHO GOT</span>
           <span>FED UP WITH BORING</span>
           <span>AND HYPOCRITIC</span>
@@ -28,16 +28,16 @@ export const DesktopDescription = () => {
           <span>HOW THE IDEA OF</span>
           <span>ESCAPING AND DYNAMIC</span>
           <span>JOURNEY ON THE YACHT</span>
-        </Description>
+        </StyledDescription>
       ) : (
-        <Description>
+        <StyledDescription>
           <span>WHO GOT FED UP WITH BORING</span>
           <span>AND HYPOCRITIC COMMONPLACE</span>
           <span> THIS IS HOW THE IDEA OF</span>
           <span>ESCAPING AND DYNAMIC</span>
           <span>JOURNEY ON THE</span>
           <span>YACHT</span>
-        </Description>
+        </StyledDescription>
       )}
     </>
   );

@@ -22,7 +22,8 @@ export const StyledButton = styled.button`
 
   transition: color 250ms ease-in-out;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: ${({ theme, $color }) =>
       $color ? theme.colors.secondary : theme.colors.light};
   }

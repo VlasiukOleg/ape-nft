@@ -5,9 +5,11 @@ export const StyledSwiperBtn = styled.button`
   border: none;
   outline: none;
   background-color: transparent;
-  color: ${({ theme }) => theme.colors.primaryText};
+  color: ${({ theme }) => theme.colors.light};
 
   font-family: BiroScriptPlus;
   font-size: 24px;
   line-height: 1;
+
+  cursor: pointer;
 `;
