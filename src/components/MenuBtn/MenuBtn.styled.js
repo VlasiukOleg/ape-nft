@@ -23,10 +23,13 @@ export const MenuBtnStyled = styled.button`
 
   cursor: pointer;
 
+  transition: color 250ms ease-in-out, fill 250ms ease-in-out;
+
   &:hover,
   &:focus {
     color: ${({ theme }) => theme.colors.light};
     fill: ${({ theme }) => theme.colors.light};
+    text-decoration: underline;
   }
 
   @media screen and (min-width: 768px) {
