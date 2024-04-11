@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ape-nft/static/css/main.2d3c91fa.css",
+    "main.css": "/ape-nft/static/css/main.faeb5ca5.css",
     "main.js": "/ape-nft/static/js/main.a8ad9743.js",
     "static/css/924.7c3ad271.chunk.css": "/ape-nft/static/css/924.7c3ad271.chunk.css",
     "static/js/924.49137fbe.chunk.js": "/ape-nft/static/js/924.49137fbe.chunk.js",
@@ -36,14 +36,14 @@
     "static/media/MessinaSansMono-SemiBold.woff2": "/ape-nft/static/media/MessinaSansMono-SemiBold.c212b64fe491bf9fb5ad.woff2",
     "static/media/svg-sprite.svg": "/ape-nft/static/media/svg-sprite.764d1bbd0de2299997caffe135bd61aa.svg",
     "index.html": "/ape-nft/index.html",
-    "main.2d3c91fa.css.map": "/ape-nft/static/css/main.2d3c91fa.css.map",
+    "main.faeb5ca5.css.map": "/ape-nft/static/css/main.faeb5ca5.css.map",
     "main.a8ad9743.js.map": "/ape-nft/static/js/main.a8ad9743.js.map",
     "924.7c3ad271.chunk.css.map": "/ape-nft/static/css/924.7c3ad271.chunk.css.map",
     "924.49137fbe.chunk.js.map": "/ape-nft/static/js/924.49137fbe.chunk.js.map",
     "532.5769d89a.chunk.js.map": "/ape-nft/static/js/532.5769d89a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d3c91fa.css",
+    "static/css/main.faeb5ca5.css",
     "static/js/main.a8ad9743.js"
   ]
 }
