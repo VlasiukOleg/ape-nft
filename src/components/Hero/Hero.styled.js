@@ -112,7 +112,7 @@ export const ImgWrap = styled.div`
 
   @media screen and (min-width: 1280px) {
     top: -38px;
-    left: 384px;
+    left: 368px;
   }
 `;
 

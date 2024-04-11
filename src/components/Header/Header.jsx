@@ -28,7 +28,7 @@ export const Header = forwardRef((props, ref) => {
         </Link>
 
         {isOpen ? (
-          <DesktopBurgerMenu onCloseMenu={onToggleMenu} ref={ref} />
+          <DesktopBurgerMenu onCloseMenu={onToggleMenu} ref={ref} openMenu={ isOpen} />
         ) : (
           <MenuBtn
             onClick={onToggleMenu}

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FooterDescription = styled.p`
+export const FooterDescription = styled.footer`
   font-weight: 400;
   text-align: center;
 
