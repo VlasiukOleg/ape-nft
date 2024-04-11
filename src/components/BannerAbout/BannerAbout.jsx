@@ -38,23 +38,3 @@ export const BannerAbout = () => {
     </Banner>
   );
 };
-
-// <p>
-//   HAVE NO LIMITS{' '}
-//   <SvgIcon>
-//     <use href={icon + `#icon-cross`}></use>
-//   </SvgIcon>
-// </p>
-
-// <p>
-//   Break rules{' '}
-//   <SvgIcon>
-//     <use href={icon + `#icon-cross`}></use>
-//   </SvgIcon>
-// </p>
-// <p>
-//   Destroy stereotypes{' '}
-//   <SvgIcon>
-//     <use href={icon + `#icon-cross`}></use>
-//   </SvgIcon>
-// </p>

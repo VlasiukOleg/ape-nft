@@ -29,13 +29,6 @@ export const Banner = styled.div`
 
   background-color: ${({ theme }) => theme.colors.accent};
 
-  /* p {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    margin-left: 30px;
-  } */
-
   ${SvgIcon} {
     margin-left: 30px;
     margin-right: 30px;
@@ -58,8 +51,8 @@ export const BannerLine = styled.p`
   min-width: 100%;
   white-space: nowrap;
   animation-name: marqueeLine;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 
   @keyframes marqueeLine {
